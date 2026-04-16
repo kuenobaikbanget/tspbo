@@ -1,11 +1,9 @@
 public class Makanan {
 
-    private int idKategori;
     private String namaMenu;
     private long harga;
 
-    public Makanan(int idKategori, String namaMenu, long harga) {
-        this.idKategori = idKategori;
+    public Makanan(String namaMenu, long harga) {
         this.namaMenu = namaMenu;
         this.harga = harga;
     }
@@ -27,6 +25,6 @@ public class Makanan {
     }
 
     public boolean isMenuSpesial() {
-        return this.idKategori == kategoriMenu.SPESIAL_MENU;
+        return this.namaMenu == kategoriMenu.SPESIAL_MENU;
     }
 }
